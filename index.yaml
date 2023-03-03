@@ -40,6 +40,18 @@ entries:
     urls:
     - https://github.com/fire-ant/capmvm/releases/download/capmvm-0.8.0/capmvm-0.8.0.tgz
     version: 0.8.0
+  capvc:
+  - apiVersion: v2
+    appVersion: 0.1.3
+    created: "2023-03-03T12:16:03.43788048Z"
+    description: A Helm Chart for the cluster-api-provider-vcluster infrastructure
+      provider
+    digest: 5150152b7821de1d3f5e4003e9da3aba9856663d40ea00e3d2da29302657dbee
+    name: capvc
+    type: application
+    urls:
+    - https://github.com/fire-ant/capvc/releases/download/capvc-0.1.3/capvc-0.1.3.tgz
+    version: 0.1.3
   dependencies:
   - apiVersion: v1
     appVersion: "1.0"
@@ -575,4 +587,4 @@ entries:
     urls:
     - https://github.com/helm/charts-repo-actions-demo/releases/download/example-v2-0.2.2/example-v2-0.2.2.tgz
     version: 0.2.2
-generated: "2023-02-28T10:58:11.320612234Z"
+generated: "2023-03-03T12:16:03.437957581Z"
