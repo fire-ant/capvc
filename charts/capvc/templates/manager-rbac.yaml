@@ -1,0 +1,14 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: {{ include "capvc.fullname" . }}-manager-rolebinding
+  labels:
+  {{- include "capvc.labels" . | nindent 4 }}
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: {{ default "cluster-admin" .Values.providerArgs.clusterRole }}
+subjects:
+- kind: ServiceAccount
+  name: '{{ include "capvc.fullname" . }}-controller-manager'
+  namespace: '{{ .Release.Namespace }}'
